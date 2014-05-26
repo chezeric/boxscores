@@ -1,0 +1,33 @@
+digraph {
+
+  landing [label="Home page", shape=box, style=filled, color=green];
+
+  search [label="Search results", shape=box, style=filled, color=green];
+  teamresult [label="Multiple games\nreturned for team"];
+  dateresult [label="Multiple games\nreturned for date"];
+  noresults [label="No matching games"];
+
+  game [label="Individual game\nview", shape=box, style=filled, color=green];
+  away [label="View away scorecard"];
+  home [label="View home scorecard"];
+  modal [label="Single play\nview with\nadded detail"];
+
+  {rank=same;home away}
+
+  landing -> search [label="search?"];
+
+  search -> teamresult [label="search by\nteam"];
+  search -> dateresult [label="search by\ndate"];
+  search -> noresults
+  search, noresults -> search [label="search again"];
+  teamresult, dateresult -> game [label="pick a\ngame"];
+
+  search -> game [label="single result"];
+  landing, noresults -> game [label="view featured\ngame?"];
+  home -> away [label="toggle"];
+  away -> home;
+  game -> away [label="default view"];
+  home, away -> modal [label="pop out an\nindividual play"];
+
+
+}

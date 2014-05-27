@@ -1,0 +1,74 @@
+/*pop_out.css*/
+
+#lightbox {
+  /** Hide the lightbox*/
+  display: none;
+  /** Apply basic lightbox styling*/
+    position: fixed;
+  z-index: 9999;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  top: 10%;
+  left: 25%;
+  border:3px solid black;
+}
+#lightbox div {
+
+  max-width: 50%;
+  max-height: 50%;
+  margin-top: 2%;
+}
+
+#lightbox:target {
+  /** Show lightbox when it is target*/
+  display: block;
+  /** Remove default browser outline style*/
+  outline: none;
+}
+
+.outerbox {
+  height:400px;
+  width:400px;
+  border: 2px solid black;
+}
+
+.diamond {
+  position:relative;
+  top:25%;
+  left: 25%;
+  height:50%;
+  width:50%;
+  border:2px solid black;
+  margin: 0;
+  display: inline-block;
+  transform:rotate(45deg);
+  -ms-transform:rotate(45deg); /* IE 9 */
+  -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
+  background-color:silver;
+}
+.action {
+  position: absolute;
+  top:20%;
+  left: 20%;
+  height: 80px;
+  width: 80px;
+  transform:rotate(315deg);
+  -ms-transform:rotate(315deg); /* IE 9 */
+  -webkit-transform:rotate(315deg); /* Opera, Chrome, and Safari */
+  text-align:center;
+}
+
+.container{
+  height:15%;
+  width:15%;
+  border:1px solid black;
+  display: inline-block;
+  text-align:center;
+  margin:3%;
+}
+
+p {
+  font-family:Helvetica;
+  font-size: 1.4em;
+}

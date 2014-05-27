@@ -57,3 +57,20 @@ left: 0;
   bottom: 0;
   right: 0;
 }
+
+[data-ball]:after {
+content: attr(data-ball);
+}
+
+[data-strikes]:after {
+content: attr(data-strikes);
+}
+
+
+[data-RBI]:after {
+content: attr(data-RBI);
+}
+
+[data-outs]:after {
+content: attr(data-outs);
+}

@@ -7,3 +7,22 @@ table, th, td {
   border: 1px solid black;
 }
 
+
+/* Styles for template plate appearance*/
+.plateappearance {
+  border: 1px solid black;
+  height: 20em; /*change this to something dynamic*/
+  width: 20em; /*change this to something dynamic*/
+}
+
+.diamond {
+  position: relative;
+  left: 25%;
+  top: 25%;
+  border: 1px solid black;
+  height: 50%;
+  width: 50%;
+  transform:rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}

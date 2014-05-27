@@ -9,10 +9,30 @@ table, th, td {
 
 
 /* Styles for template plate appearance*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+ }
+
+.flexcontainer {
+  height: 100%;
+  width: 20vh;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -webkit-align-content: stretch;
+  align-content: stretch;
+}
+
 .plateappearance {
+  height: 20vh;
+  width: 100%;
   border: 1px solid black;
-  height: 20em; /*change this to something dynamic*/
-  width: 20em; /*change this to something dynamic*/
+  position: relative;
+  flex: 1;
+  -webkit-flex: 1;
 }
 
 .diamond {

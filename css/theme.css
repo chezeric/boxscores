@@ -1,0 +1,11 @@
+/* Themes */
+
+html {
+  color: #003279; /* blue font */
+}
+
+button {
+  background-color: #267934; /* green */
+  color: #ffffff; /* white */
+  text-transform: uppercase;
+}

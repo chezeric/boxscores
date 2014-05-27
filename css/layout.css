@@ -1,0 +1,10 @@
+/* Layout */
+
+.logo {
+  margin: 1.618em auto;
+  text-align: center;
+}
+
+.introduction {
+  margin: 0 11.414em; /* will need to update with skeleton position */
+}

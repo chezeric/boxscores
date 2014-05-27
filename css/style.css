@@ -1,9 +1,6 @@
-body {
-  font-family: "Courier New", Courier, monospace;
-}
 
 table, th, td {
-  border-collapse: collapse;
+  border-collapse: collapse; /*duplicated in base.css*/
   border: 1px solid black;
 }
 

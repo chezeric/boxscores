@@ -12,6 +12,65 @@
   </head>
   <body>
 
+    <!--<header></header> -->
+
+      <!-- A 3 mask (window) input search query, Search team, Search date, Search player. {display:inline-block;} Could be in the <header></header> tags.-->
+      <form id="search">
+        <fieldset>
+          <legend>Search</legend>
+              <label for="Team">Team</label>
+                <input id='team' name='team' placeholder='Team' type="search" name="query">
+              <label for='Date'>Date</label>
+                <input id='date' name='date' placeholder='Eg. 05/23/1957' type="search" name="query">
+              <label for='Player'>Player</label>
+                <input id='player' name='player' placeholder='Player' type="search" name="query">
+        </fieldset>
+      </form>
+        <!-- The main container is really the window where the search results appear.  Results appear as a type of ul list. -->
+    <main class="container">
+        <fieldset>
+          <legend>Results</legend>
+          <ul>
+            <li>Date<span>   </span>Opposing Team<span>   </span>H/A<span>  </span>Score</li>
+            <li>Date<span>   </span>Opposing Team<span>   </span>H/A<span>  </span>Score</li>
+            <li>Date<span>   </span>Opposing Team<span>   </span>H/A<span>  </span>Score</li>
+            <li>Date<span>   </span>Opposing Team<span>   </span>H/A<span>  </span>Score</li>
+            <li>Date<span>   </span>Opposing Team<span>   </span>H/A<span>  </span>Score</li>
+            <li>Date<span>   </span>Opposing Team<span>   </span>H/A<span>  </span>Score</li>
+            <li>Date<span></span>Opposing Team<span></span>H/A<span></span>Score</li>
+            <li>Date<span></span>Opposing Team<span></span>H/A<span></span>Score</li>
+            <li>Date<span></span>Opposing Team<span></span>H/A<span></span>Score</li>
+          </ul>
+        </fieldset>
+    </main>
+
+
+      <!--Articles' contents refer to other games that these teams played and could be of interest for the user.  This is presented in an un-ordered list format-->
+      <article>
+        <fieldset>
+          <legend>Other games played between these teams in this season</legend>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+        </fieldset>
+      </article>
+
+    <!--Footer contains copyrite info and a link to the contact page-->
+    <footer>
+      <h5>Copywrite information and a link to the Contact page</h5>
+    </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

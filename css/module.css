@@ -6,6 +6,7 @@ button {
   padding: 0.618em 1.618em;
 }
 
+
 .base-1 {
   border-bottom: 3px solid #267935;
 }
@@ -28,4 +29,9 @@ background-color: #808080;
   -ms-transform: rotate(45deg); /* IE 9 */
   -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
   transform: rotate(45deg);
+}
+
+footer {
+  text-align: center;
+  margin: 0.618em auto;
 }

@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+main {
+  min-height: 40em;
+}
+
 .introduction {
   margin: 0 11.414em; /* will need to update with skeleton position */
 }

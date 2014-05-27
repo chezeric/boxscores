@@ -14,32 +14,51 @@ table, th, td {
 
 .flexcontainer {
   height: 100%;
-  width: 20vh;
+  width: 100%;
   display: flex;
   display: -webkit-flex;
-  flex-direction: column;
-  -webkit-flex-direction: column;
+  flex-direction: row;
+  -webkit-flex-direction: row;
   -webkit-align-content: stretch;
   align-content: stretch;
 }
-
+.inning {
+  width: 6vw;
+  height: auto;
+}
+.inningnumber {
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+}
 .plateappearance {
-  height: 20vh;
+  height: 6vw;
   width: 100%;
   border: 1px solid black;
   position: relative;
   flex: 1;
   -webkit-flex: 1;
 }
-
 .diamond {
   position: relative;
   left: 25%;
   top: 25%;
-  border: 1px solid black;
+  border: 1px dashed darkblue;
   height: 50%;
   width: 50%;
-  transform:rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
+  transform:rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+}
+.battingorder {
+  width: 20vw;
+  height: auto;
+}
+.playername {
+  height: 6vw;
+  width: 100%;
+  border: 1px solid black;
+  position: relative;
+  flex: 1;
+  -webkit-flex: 1;
 }

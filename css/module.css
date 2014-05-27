@@ -5,3 +5,27 @@ button {
   margin: 0.618em auto;
   padding: 0.618em 1.618em;
 }
+
+.base-1 {
+  border-bottom: 3px solid #267935;
+}
+
+.base-2 {
+border-right: 3px solid #267935;
+}
+
+.base-3 {
+border-top: 3px solid #267935;
+}
+
+.base-4 {
+border-left: 3px solid #267935;
+background-color: #808080;
+}
+
+.diamond h2 {
+
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+}

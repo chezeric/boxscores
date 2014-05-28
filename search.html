@@ -7,65 +7,64 @@
     <title>CSS Scorecard - Search Results</title>
     <meta name="description" content="Baseball scorecards in CSS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/module.css">
+    <link rel="stylesheet" href="css/theme.css">
     <script src="js/vendor/modernizr-2.8.0.min.js"></script>
   </head>
   <body>
 
     <!--<header></header> -->
 
-      <!-- A 3 mask (window) input search query, Search team, Search date, Search player. {display:inline-block;} Could be in the <header></header> tags.-->
-      <form id="search">
-        <fieldset>
-          <legend>Search</legend>
-              <label for="Team">Team</label>
-                <input id='team' name='team' placeholder='Team' type="search" name="query">
-              <label for='Date'>Date</label>
-                <input id='date' name='date' placeholder='Eg. 05/23/1957' type="search" name="query">
-              <label for='Player'>Player</label>
-                <input id='player' name='player' placeholder='Player' type="search" name="query">
-        </fieldset>
-      </form>
-        <!-- The main container is really the window where the search results appear.  Results appear as a type of ul list. -->
-    <main class="container">
-        <fieldset>
-          <legend>Results</legend>
-          <ul>
-            <li>Date<span>   </span>Opposing Team<span>   </span>H/A<span>  </span>Score</li>
-            <li>Date<span>   </span>Opposing Team<span>   </span>H/A<span>  </span>Score</li>
-            <li>Date<span>   </span>Opposing Team<span>   </span>H/A<span>  </span>Score</li>
-            <li>Date<span>   </span>Opposing Team<span>   </span>H/A<span>  </span>Score</li>
-            <li>Date<span>   </span>Opposing Team<span>   </span>H/A<span>  </span>Score</li>
-            <li>Date<span>   </span>Opposing Team<span>   </span>H/A<span>  </span>Score</li>
-            <li>Date<span></span>Opposing Team<span></span>H/A<span></span>Score</li>
-            <li>Date<span></span>Opposing Team<span></span>H/A<span></span>Score</li>
-            <li>Date<span></span>Opposing Team<span></span>H/A<span></span>Score</li>
-          </ul>
-        </fieldset>
+    <!-- A 3 mask (window) input search query, Search team, Search date, Search player. {display:inline-block;} Could be in the <header></header> tags.-->
+    <form>
+      <fieldset>
+        <legend>Search</legend>
+        <label for="team">Team</label>
+          <select id="team" name="team">
+            <option>-All teams-</option>
+            <optgroup label="AL East">
+              <option>Baltimore Orioles</option><option>Boston Red Sox</option><option>New York Yankees</option><option>Tampa Bay Rays</option><option>Toronto Blue Jays</option>
+            </optgroup>
+            <optgroup label="AL Central">
+              <option>Chicago White Sox</option><option>Cleveland Indians</option><option>Detroit Tigers</option><option>Kansas City Royals</option><option>Minnesota Twins</option>
+            </optgroup>
+            <optgroup label="AL West">
+              <option>Houston Astros</option><option>Los Angeles Angels</option><option>Oakland Athletics</option><option>Seattle Mariners</option><option>Texas Rangers</option>
+            </optgroup>
+            <optgroup label="NL East">
+              <option>Atlanta Braves</option><option>Miami Marlins</option><option>New York Mets</option><option>Philadelphia Phillies</option><option>Washington Nationals</option>
+            </optgroup>
+            <optgroup label="NL Central">
+              <option>Chicago Cubs</option><option>Cincinatti Reds</option><option>Milwaukee Brewers</option><option>Pitsburgh Pirates</option><option>St Louis Cardinals</option>
+            </optgroup>
+            <optgroup label="NL West">
+              <option>Arizona Diamondbacks</option><option>Colorado Rockies</option><option>Los Angeles Dodgers</option><option>San Diego Padres</option><option>San Francisco Giants</option>
+            </optgroup>
+          </select>
+        <label for="date">Date</label><input type="date" id="date" name="date" value="2012-06-13">
+        <label for="player">Player</label><input type="text" id="player" name="player" placeholder="Matt Cain">
+      </fieldset>
+      <fieldset><button type=submit>Search</button></fieldset>
+    </form>
+
+    <!-- The main container is really the window where the search results appear.  Results appear as a type of ul list. -->
+    <main>
+      <ul>
+        <h1>Results</h1>
+        <li>Astros vs Giants, June 13, 2012, 7:15PM, AT&T Park</li>
+      </ul>
+      <ul>
+        <h2>Similar Results</h2>
+        <li>Astros vs Giants, June 12, 2012, 7:16PM, AT&T Park</li>
+        <li>Astros vs Giants, June 14, 2012, 12:46PM, AT&T Park</li>
+        <li>Giants vs Astros, August 28, 2012, 7:06PM, Minute Maid Park</li>
+      </ul>
     </main>
 
-
-      <!--Articles' contents refer to other games that these teams played and could be of interest for the user.  This is presented in an un-ordered list format-->
-      <article>
-        <fieldset>
-          <legend>Other games played between these teams in this season</legend>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-        </fieldset>
-      </article>
 
     <!--Footer contains copyrite info and a link to the contact page-->
     <footer>

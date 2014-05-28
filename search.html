@@ -22,8 +22,8 @@
     <!-- A 3 mask (window) input search query, Search team, Search date, Search player. {display:inline-block;} Could be in the <header></header> tags.-->
     <form>
       <fieldset>
-        <legend>Search</legend>
-        <label for="team">Team</label>
+        <legend>Search the archives</legend>
+        <label for="team">Team:</label>
           <select id="team" name="team">
             <option>-All teams-</option>
             <optgroup label="AL East">
@@ -44,9 +44,22 @@
             <optgroup label="NL West">
               <option>Arizona Diamondbacks</option><option>Colorado Rockies</option><option>Los Angeles Dodgers</option><option>San Diego Padres</option><option>San Francisco Giants</option>
             </optgroup>
+            <optgroup label="Defunct teams">
+              <option>Boston Americans (1901-1907)</option>
+              <option>Chicago White Stockings (1901-1903)</option>
+              <option>Cleveland Naps (1903-1914)</option>
+              <option>Houston Colt .45's (1962-1964)</option>
+              <option>Kansas City Athletics (1955-1967)</option>
+              <option>Montreal Expos (1969-2004)</option>
+              <option>New York Giants (1885-1957)</option>
+              <option>New York Highlanders (1903-1912)</option>
+              <option>Philadelphia Athletics (1901-1954)</option>
+              <option>St Louis Browns (1902-1953)</option>
+              <option>Washington Senators (1901-1960)</option>
+            </optgroup>
           </select>
-        <label for="date">Date</label><input type="date" id="date" name="date" value="2012-06-13">
-        <label for="player">Player</label><input type="text" id="player" name="player" placeholder="Matt Cain">
+        <label for="date">Date:</label><input type="date" id="date" name="date" value="2012-06-13">
+        <label for="player">Player:</label><input type="text" id="player" name="player" placeholder="(first name) last name">
       </fieldset>
       <fieldset><button type=submit>Search</button></fieldset>
     </form>

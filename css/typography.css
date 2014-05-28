@@ -90,3 +90,8 @@ small {
     font-weight: normal;
     font-style: italic;
 }
+
+/* Add in to base later */
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,102 @@
+@font-face
+{
+  font-family: Chunk;
+  src: url(fonts/Chunk.eot) format("eot"),
+  url(Chunk.ttf) format("truetype"), url(fonts/Chunk.woff) format("woff");
+}
+
+@font-face
+{
+  font-family: Marcelle;
+  src: url(fonts/Marcsc___.ttf);
+}
+
+@font-face
+{
+  font-family: Marcelle-Swash;
+  src: url(fonts/MARCS___.ttf);
+}
+
+@font-face
+{
+  font-family: Haymaker;
+  src: url(fonts/Haymaker.ttf);
+}
+
+@font-face
+{
+  font-family: League Gothic;
+  src: url(fonts/LeagueGothic-Regular.otf);
+}
+
+@font-face
+{
+  font-family: Oil Can;
+  src: url(fonts/Oil Can.ttf);
+}
+
+@font-face
+{
+  font-family: Ostrich Sans;
+  src: url(fonts/OstrichSans-Bold.otf);
+}
+
+@font-face
+{
+  font-family: Sullivan;
+  src: url(fonts/Sullivan-Bevel.otf);
+  font-weight: bold;
+}
+
+@font-face
+{
+  font-family: Sullivan;
+  src: url(fonts/Sullivan-Regular.otf);
+  font-weight: normal;
+}
+
+@font-face
+{
+  font-family: Bosox;
+  src: url(fonts/Bosox\ Outline\ Heavy.ttf);
+}
+
+@font-face
+{
+  font-family: Lato;
+  src: url(fonts/Lato-Hairline.ttf);
+  font-weight: lighter;
+}
+
+@font-face
+{
+  font-family: Lato;
+  src: url(fonts/Lato-Light.ttf)
+  font-weight: normal;
+}
+
+@font-face
+{
+  font-family: Governor;
+  src: url(fonts/governor.ttf);
+}
+
+@font-face
+{
+  font-family: Duke;
+  src: url(fonts/Duke.otf);
+  font-weight: normal;
+}
+
+@font-face
+{
+  font-family: Duke;
+  src: url(fonts/Duke Shadow.otf);
+  font-weight: lighter;
+}
+
+@font-face
+{
+  font-family: ;
+  src: url(fonts/);
+}

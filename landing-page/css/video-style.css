@@ -1,0 +1,168 @@
+body {
+  background:
+    linear-gradient(
+      rgba(42, 44, 43, .75),
+      rgba(42, 44, 43, .75)
+      ),
+      url(jackie_robinson.jpg);
+  background-size: cover;
+  background-repeat: none;
+  background-position: 50% 20%;
+}
+
+
+/*img {
+  margin: 10vmin auto;
+  display: block;
+}*/
+
+figure {
+  margin: 4vmax auto 2vmax auto;
+  text-align: center;
+}
+
+
+/*h1 {
+  font-family: Marcelle;
+  font-size: 6.854vmax;
+  padding-left: 5%;
+  padding-top: 5%;
+  text-transform: uppercase;
+  color: #DA3537;
+  margin: 10vmax auto 2vmax auto;
+  text-align: center;
+  display: block;
+}*/
+
+/*h1 span {
+  font-family: Marcelle-Swash;
+}*/
+
+/*font-family: Chunk;
+  font-family: Haymaker;
+  font-family: League Gothic;
+  font-family: Sullivan;
+  font-family: Oil Can;
+  font-family: Duke;
+  font-family: Lato;
+  font-family: Governor;
+  font-family: Bosox;*/
+
+h2 {
+  display: block;
+  font-family: Chunk;
+  font-size: 2.618em;
+  width: auto;
+  text-align: center;
+  margin: 2vmax auto 5vmax auto;
+  /*color: #DA3537;*/ /* Soft Red */
+  /*color: #D7DADB;*/ /*Light Grey*/
+  color: #6DBCDB;
+}
+
+section {
+  margin: 0 auto;
+  text-align: center;
+}
+
+label {
+  font-family: Lato;
+  font-size: 1em;
+  color: #D7DADB;
+  opacity: .75;
+  padding-right: 1em;
+  text-transform: uppercase;
+  display:;
+}
+
+input {
+  width: auto;
+  /*text-align: center;*/
+  padding-left: .5em;
+/*  padding: 0 5%;*/
+  font-size: 1em;
+  display:;
+}
+
+a{
+  text-decoration: none;
+  color: #2A2C2B;
+}
+.button {
+  margin: 4vmax 0 4vmax 0;
+}
+
+button {
+  display: inline-block;
+  text-align: center;
+  font-family: League Gothic, Sans;
+  text-transform: uppercase;
+  background-color: #6DBCDB;
+  width: 8em;
+  padding: 0.618em;
+  border: none;
+}
+
+.search{
+  margin: 2em 1em 2em auto;
+}
+
+.featured{
+  margin: 2em auto 2em 1em;
+}
+@media (max-width: 800px) {
+  body {
+    background-size: 150% auto;
+    overflow: hidden;
+    background-position: auto auto;
+  }
+
+  figure {
+  margin-bottom: 3vmax;
+  }
+
+  h2 {
+    font-size: 4.236vmax;
+  }
+
+  input, label {
+    font-size: 2.618vmax;
+  }
+
+  a {
+    font-size: 2.618vmax;
+  }
+}
+
+@media (max-width: 640px) {
+
+  body {
+    background-size: 200% auto;
+    overflow: hidden;
+    background-position: auto auto;
+  }
+
+  figure {
+    height: 20%px;
+    width: auto;
+  }
+
+  h2{
+    width: auto;
+    text-align: center;
+  }
+
+}
+
+@media(max-width: 480px) {
+
+    body {
+      background-size: 300% auto;
+      background-position: 40% 40%;
+    }
+
+    button {
+      width: 6em;
+      padding: .382em .618em;
+    }
+}

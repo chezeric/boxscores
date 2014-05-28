@@ -7,20 +7,33 @@
     <title>CSS Scorecard - HOU v SFG 06/13/12</title>
     <meta name="description" content="Baseball scorecards in CSS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/typography.css">
-    <link rel="stylesheet" href="css/module.css">
-    <link rel="stylesheet" href="css/theme.css">
 
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/12cols.css">
+    <link rel="stylesheet" type="text/css" href="css/typography.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/module.css">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
     <script src="js/vendor/modernizr-2.8.0.min.js"></script>
   </head>
   <body>
-    <div class="flexcontainer">
-      <div class="battingorder">
+    <header>Placeholder for logo</header>
+    <section class="mainContent section">
+      <header>
+        <section class="span_2_of_12 inlineblock"><p>June 13, 2012</p></section>
+        <button id="awayTab" class="span_2_of_12 inlineblock" type="button">Astros</button>
+        <button id="homeTab" class="span_2_of_12 inlineblock" type="button">Giants</button>
+        <section class="span_2_of_12 inlineblock"><p>AT&T Park</p></section>
+      </header>
+      <div class="battingorder col">
         <!-- template scorecard entry -->
-        <div class="inningnumber">Batting Order</div>
+        <div class="colhead">Player</div>
+        <div class="playername">
+          <figure><img src="#"></figure>
+          <h2>Gregor Blanco</h2>
+          <p>#7</p><p>RF</p>
+        </div>
         <div class="playername"></div>
         <div class="playername"></div>
         <div class="playername"></div>
@@ -31,9 +44,11 @@
         <div class="playername"></div>
         <div class="playername"></div>
       </div>
-      <div class="inning">
-        <!-- template scorecard entry -->
-        <div class="inningnumber">1</div>
+      <div class="col span_7_of_12 scroll">
+        <div class="fixedwidth">
+          <div class="inning">
+            <!-- template scorecard entry -->
+            <div class="colhead">1</div>
             <div class="plateappearance">
                 <small class="ball" data-ball="2">B: </small>
                 <small class="strike" data-strikes="2">S: </small>
@@ -43,122 +58,123 @@
                     <h2>HR</h2>
                 </div>
             </div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+          </div>
+          <div class="inning">
+            <!-- template scorecard entry -->
+            <div class="colhead">2</div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+          </div>
+          <div class="inning">
+            <!-- template scorecard entry -->
+            <div class="colhead">3</div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+          </div>
+          <div class="inning">
+            <!-- template scorecard entry -->
+            <div class="colhead">4</div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+          </div>
+          <div class="inning">
+            <!-- template scorecard entry -->
+            <div class="colhead">5</div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+          </div>
+          <div class="inning">
+            <!-- template scorecard entry -->
+            <div class="colhead">6</div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+          </div>
+          <div class="inning">
+            <!-- template scorecard entry -->
+            <div class="colhead">7</div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+          </div>
+          <div class="inning">
+            <!-- template scorecard entry -->
+            <div class="colhead">8</div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+          </div>
+          <div class="inning">
+            <!-- template scorecard entry -->
+            <div class="colhead">9</div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+            <div class="plateappearance"><div class="diamond"></div></div>
+          </div>
+        </div>
       </div>
-      <div class="inning">
-        <!-- template scorecard entry -->
-        <div class="inningnumber">2</div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-      </div>
-      <div class="inning">
-        <!-- template scorecard entry -->
-        <div class="inningnumber">3</div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-      </div>
-      <div class="inning">
-        <!-- template scorecard entry -->
-        <div class="inningnumber">4</div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-      </div>
-      <div class="inning">
-        <!-- template scorecard entry -->
-        <div class="inningnumber">5</div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-      </div>
-      <div class="inning">
-        <!-- template scorecard entry -->
-        <div class="inningnumber">6</div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-      </div>
-      <div class="inning">
-        <!-- template scorecard entry -->
-        <div class="inningnumber">7</div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-      </div>
-      <div class="inning">
-        <!-- template scorecard entry -->
-        <div class="inningnumber">8</div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-      </div>
-      <div class="inning">
-        <!-- template scorecard entry -->
-        <div class="inningnumber">9</div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-        <div class="plateappearance"><div class="diamond"></div></div>
-      </div>
-    </div>
+    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="script.js"></script>
-
   </body>
 </html>

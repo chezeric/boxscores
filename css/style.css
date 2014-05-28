@@ -1,38 +1,23 @@
 
-table, th, td {
-  border-collapse: collapse; /*duplicated in base.css*/
-  border: 1px solid black;
-}
 
 
 /* Styles for template plate appearance*/
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
- }
 
-.flexcontainer {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: row;
-  -webkit-flex-direction: row;
-  -webkit-align-content: stretch;
-  align-content: stretch;
-}
+
 .inning {
-  width: 6vw;
+  width: 9vw;
   height: auto;
+  float: left;
 }
-.inningnumber {
+.colhead {
+  font-size: 2.5vw;
   width: 100%;
-  height: auto;
+  height: 3vw;
   border: 1px solid black;
+  text-align: center;
 }
 .plateappearance {
-  height: 6vw;
+  height: 9vw;
   width: 100%;
   border: 1px solid black;
   position: relative;
@@ -51,14 +36,26 @@ table, th, td {
   -moz-transform: rotate(-45deg);
 }
 .battingorder {
-  width: 20vw;
+  width: 27vw;
   height: auto;
 }
 .playername {
-  height: 6vw;
+  height: 9vw;
   width: 100%;
   border: 1px solid black;
   position: relative;
   flex: 1;
   -webkit-flex: 1;
+}
+.scroll{
+  overflow: scroll;
+    border: 1px solid black;
+
+}
+.fixedwidth{
+  width: 100vw;
+}
+.inlineblock{
+  display: inline-block;
+  margin: 0 auto;
 }
